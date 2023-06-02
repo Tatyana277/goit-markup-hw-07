@@ -69,14 +69,79 @@ button {
 }
 
 .container {
-  width: 1158px;
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
-.container-header,
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.nav-list, address {
+  display: none;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+.mobile-menu-btn {
+  display: block;
+  align-items: center;
+  padding: 0;
+ 
+  border: none;
+  background-color: transparent;
+}
+
+.burger {
+stroke: var(--background-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;}
+  .nav-list {
+    display: flex;
+  }
+  .address {
+    display: block;
+  }
+}
+
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo-title {
+  color: var(--color-logo-web);
+}
+
+.logo-title-header {
+  color: var(--color-logo-header);
+}
+/* .container-header,
 .nav,
 .page-nav,
 .nav-list,
@@ -93,10 +158,11 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 /* ----- begin header ------ */
 
+/* 
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 800;
@@ -176,9 +242,9 @@ body {
 .nav-contact:focus {
   color: var(--accent-color);
 }
-/* ----- end header ------ */
+----- end header ------
 
-.title-section {
+ .title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -186,9 +252,9 @@ body {
   color: var(--primary-text-color);
   text-align: center;
   margin-bottom: 72px;
-}
+} 
 
-/* ----- begin section hero ------ */
+----- begin section hero ------
 .section-hero {
   background-color: var(--background-secondary);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -242,9 +308,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* ----- end section hero  ------ */
+----- end section hero  ------
 
-/* ----- begin section description ------ */
+----- begin section description ------
 .container-description {
   display: flex;
   column-gap: 24px;
@@ -279,9 +345,9 @@ body {
   border-radius: 4px;
 }
 
-/* ----- end section description ------ */
+----- end section description ------
 
-/* ----- begin section we are doing ------ */
+----- begin section we are doing ------
 
 .section-we-are-doing-list {
   display: flex;
@@ -292,9 +358,9 @@ body {
   border: 1px solid #e7e9fc;
 }
 
-/* ----- end section we are doing ------ */
+----- end section we are doing ------
 
-/* ----- begin section our team ------ */
+----- begin section our team ------
 
 .section-our-team {
   background-color: var(--background-tertiary);
@@ -358,9 +424,9 @@ body {
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
-/* ----- end section our team ------ */
+----- end section our team ------
 
-/* ----- begin section clients ------ */
+----- begin section clients ------
 
 .section-clients {
   background-color: var(--background-primary);
@@ -396,9 +462,9 @@ body {
   fill: var(--accent-color);
 }
 
-/* ----- end section clients ------ */
+----- end section clients ------
 
-/* ----- begin footer ------ */
+----- begin footer ------
 .page-footer {
   background-color: var(--background-secondary);
   padding: 100px 0;
@@ -470,7 +536,7 @@ body {
   background-color: #31d0aa;
 }
 
-/* ------ form footer ------*/
+------ form footer ------
 .subscribe-footer {
   display: block;
 }
@@ -534,9 +600,9 @@ body {
   fill: var(--color-border-form-footer);
 }
 
-/* ----- end footer ------ */
+----- end footer ------
 
-/* --------------- page portfolio  -------------- */
+--------------- page portfolio  --------------
 .btn-filter {
   display: flex;
   flex-direction: row;
@@ -653,7 +719,7 @@ body {
   transform: translateY(0%);
 }
 
-/* ----------- backdrop ------------*/
+----------- backdrop ------------
 
 .backdrop {
   position: fixed;
@@ -729,7 +795,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* ----------- contact form ------------*/
+----------- contact form ------------
 .modal-form {
   margin-bottom: 8px;
 }
@@ -875,4 +941,4 @@ body {
 .contact-form-btn-send:hover,
 .contact-form-btn-send:focus {
   background-color: var(--accent-color);
-}
+}  */
