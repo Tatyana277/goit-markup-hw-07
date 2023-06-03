@@ -141,6 +141,38 @@ stroke: var(--background-secondary);
 .logo-title-header {
   color: var(--color-logo-header);
 }
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-primary);
+}
+
+.mobile-modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: background-color var(--transition), border var(--transition);
+}
+
+
+
+
+
 /* .container-header,
 .nav,
 .page-nav,
