@@ -396,8 +396,7 @@ body {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office-mob.jpg);
   background-size: cover;
-
-  max-width: 428px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -462,7 +461,6 @@ body {
   .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office-tabl.jpg);
-    max-width: 768px;
   }
 
   .main-title {
@@ -489,7 +487,6 @@ body {
   .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office-desktop.jpg);
-    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -516,11 +513,6 @@ body {
   .cont-descr-list:not(:last-child) {
     margin-bottom: 72px;
   }
-}
-
-.section-description {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .description-title {
@@ -562,15 +554,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px 100px;
+    width: 264px;
+    height: 112px;
     margin-bottom: 8px;
     background-color: var(--background-tertiary);
     border-radius: 4px;
   }
-  .section-description {
-    padding-top: 120px;
-    padding-bottom: 0;
-  }
+
   .container-description {
     display: flex;
     flex-wrap: nowrap;
@@ -588,7 +578,7 @@ body {
   }
 }
 
-/* ----- section we are doing mobile ------ */
+/* ----- section we are doing ------ */
 
 @media screen and (max-width: 1157px) {
   .section-we-are-doing {
@@ -597,6 +587,9 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
+  .section-we-are-doing {
+    margin-bottom: 120px;
+  }
   .section-we-are-doing-list {
     display: flex;
     column-gap: 24px;
@@ -762,6 +755,11 @@ body {
 /* ---------------- section clients tablet --------------- */
 
 @media screen and (min-width: 768px) {
+  .section-clients {
+    width: 552px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .clients-item {
     width: 104px;
   }
@@ -775,15 +773,18 @@ body {
     padding: 16px 32px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+/* @media screen and (min-width: 768px) and (max-width: 1157px) {
   .section-clients {
     padding-left: 92px;
     padding-right: 92px;
   }
-}
+} */
 /* ---------------- section clients desktop --------------- */
 
 @media screen and (min-width: 1158px) {
+  .section-clients {
+    width: 1128px;
+  }
   .clients-list {
     flex-wrap: nowrap;
   }
@@ -936,7 +937,9 @@ body {
   .container-footer {
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 108px;
+    width: 552px;
+    margin-left: auto;
+    margin-right: auto;
     column-gap: 24px;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -971,7 +974,7 @@ body {
     padding: 100px 0;
   }
   .container-footer {
-    padding-left: 0;
+    width: 1128px;
     column-gap: 0;
     flex-wrap: nowrap;
   }
@@ -994,6 +997,10 @@ body {
   .social-list-link-footer:hover,
   .social-list-link-footer:focus {
     background-color: #31d0aa;
+  }
+  .subscribe-form-footer-btn:hover,
+  .subscribe-form-footer-btn:focus {
+    background: var(--background-accent);
   }
 }
 
@@ -1218,7 +1225,7 @@ body {
 
 .modal {
   position: absolute;
-  width: 392px;
+  max-width: 392px;
   padding: 72px 16px 24px;
   top: 50%;
   left: 50%;
